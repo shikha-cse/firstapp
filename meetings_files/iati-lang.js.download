@@ -1,0 +1,62 @@
+
+$(document).ready(function() {
+ $pageLocale = $('#pageLocale').val();
+ if ($pageLocale == 'tr') {
+   $('#iati-cc').css('top','-100px');
+   $('#iati-cc-text').html('<span>Doğrudan rezervasyon için hemen arayın.</span>');
+   $('#iati-cc-no').html('<span>0850 300 95 43</span>');
+   $('#callcenter-text').html('Doğrudan Rezervasyon');
+   $('#callcenter-no').attr('href','tel:0850 300 95 43');
+   $('title').html('Mardan Palace - Resmi Web Sitesi');
+   $('#readmore-rez').html('test');
+   $('meta[name=description]').attr('content','Avrupa’nın Önde Gelen Lüks Oteli ödülü almış Mardan Palace Antalya, İstanbul’daki eşsiz tarihi ikonların mimarisi ile sizleri konforlu, lüks ve ihtişamlı bir tatile bekliyor.');
+   $('#wta-text-1').html("Avrupa'nın Önde Gelen Lüks Oteli");
+   $('#wta-text-2').html("Avrupa'nın Önde Gelen SPA Resort Oteli");
+   $('#wta-text-3').html("Dünya'nın Önde Gelen Yüzme Havuzu");
+   $('#ads-button-1').html("<a href='http://www.mardanpalace.com/tr/dogrudan-rezervasyon-avantajlari'>Doğrudan Rezervasyon Avantajları</a>");
+   $('#ads-button-2').html("<a href='http://www.mardanpalace.com/tr/kampanyalar'>Kampanyalar</a>");
+ }else if($pageLocale == 'en'){
+   $('#iati-cc').css('top','-100px');
+   $('#iati-cc-text').html('<span>Call Now For Direct Booking</span>');
+   $('#iati-cc-no').html('<span>0850 300 93 73</span>');
+   $('#callcenter-text').html('Direct Booking');
+   $('#callcenter-no').attr('href','tel:+90 850 300 93 73');
+   $('title').html('Mardan Palace - Offical Website');
+   $('meta[name=description]').attr('content',"Mardan Palace Antalya whics is one of the Europe's Leading Luxury Hotels, is waiting to offer you a luxurious stay with its exceptional Istanbul and Ottoman architecture, extravagant luxury and royal comfort");
+   $('#ads-button-1').html('<a href="http://www.mardanpalace.com/en/advantages">Direct Booking Privilages</a>');
+   $('#ads-button-2').html('<a href="http://www.mardanpalace.com/en/campaigns">Promotions</a>');
+   $('#wta-text-1').html("Europe's Leading Luxury Hotel");
+   $('#wta-text-2').html("Europe's Leading Spa Resort");
+   $('#wta-text-3').html("World's Leading Hotel Swimming Pool");
+
+ }else if ($pageLocale == 'de') {
+   $('#iati-cc').css('top','-110px');
+   $('#iati-cc-text').html('<span>Rufen Sie uns jetzt an, gerne nehmen wir Ihre Reservierung entgegen.</span>');
+   $('#iati-cc-no').html('<span>0850 300 93 74</span>');
+   $('#callcenter-text').html('Jetzt Buchen');
+   $('#callcenter-no').attr('href','tel:+90 850 300 93 74');
+   $('title').html('Mardan Palace - Offizielle Webseite');
+   $('meta[name=description]').attr('content',"Mardan Palace Antalya ist eines der führenden Luxushotels Europas und wartet darauf, Ihnen einen luxuriösen Aufenthalt mit seiner außergewöhnlichen osmanischen Architektur sowie einem extravaganten Luxus im  königlichem Komfort zu bieten.");
+   $('#ads-button-1').html('<a href="http://www.mardanpalace.com/de/vorteile">Ihre Buchungsvorteile</a>');
+   $('#ads-button-2').html('<a href="http://www.mardanpalace.com/de/kampagnen">Kampagne</a>');
+   $('#wta-text-1').html("Europas führendes Luxus-Hotel");
+   $('#wta-text-2').html("Europas führendes SPA Resort Hotel");
+   $('#wta-text-3').html("Das weltweit führende Schwimmbecken");
+ }else if ($pageLocale == 'ru') {
+   $('#whatsapp-no').css('top','150px');
+   $('#iati-cc').css('top','-110px');
+   $('#iati-cc-text').html('<span>Для прямого бронирования звоните прямо сейчас</span>');
+   $('#iati-cc-no').html('<span>0850 300 93 75</span>');
+   $('#callcenter-text').html('прямое бронирование');
+   $('#callcenter-no').attr('href','tel:+90 850 300 93 75');
+   $('title').html('Mardan Palace - Официальный Сайт Отеля');
+   $('meta[name=description]').attr('content',"Mardan Palace Antalya является одним из ведущих роскошных в Европе отелей, ждет чтобы предложить Вам комфортное пребывание с исключительно стамбульской и оттоманской архитектурой, экстравагантной королевской роскошью и комфортом.");
+   $('.ads-button').css('right','0px');
+   $('#ads-button-1').html('<a href="http://www.mardanpalace.com/ru/%D0%BB%D1%8C%D0%B3%D0%BE%D1%82%D1%8B">Преимущества прямого бронирования</a>');
+   $('#ads-button-2').html('<a href="http://www.mardanpalace.com/ru/%D0%BA%D0%B0%D0%BC%D0%BF%D0%B0%D0%BD%D0%B8%D0%B8">Кампании</a>');
+   $('#wta-text-1').html("Ведущий Роскошный Oтель Европы");
+   $('#wta-text-2').html("Ведущий СПА-курорт Европы");
+   $('#wta-text-3').html("Бассейн ведущего отеля в Mире");
+ }
+
+});

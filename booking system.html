@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title> hotel booking form</title>
+	<style type="text/css" media="screen">
+	body{
+		margin:0;
+		padding:0;
+		background:url(rty.jpg);
+		background-size:cover;
+	}
+</style>
+</head>
+<body>
+	<div class="HOTEL BOOKING-FORM">
+		<h1 style="color:black;font-size:40px;">HOTEL BOOKING-FORM</h1></div>
+	<form action="" method="GET">
+		<fieldset>
+			<legend style="color:black;font-size:20px;"align="center"> Personal Details:</legend>
+			<label for="name">Username:</label><input type="text" name="username" id="name" required autofocus placeholder="your username" pattern="[a-zA-Z]{3,}" title="please enter in more than three letters">
+			<label for="email">Email:</label><input type="text" name="email" id="email" required autofocus placeholder="your email" pattern="[a-zA-Z]{3,}@[a-zA-Z]{3,}[.]{1}[a-zA-Z]{2}" title="please enter in valid email address">
+			<label for="phone">Phone:</label><input type="tel" name="phone" id="phone" required placeholder="please enter in your phone number" pattern="[0-9]{4} [0-9]{3} [0-9]{3}" title="please enter in a phone number in this format:#### ### ###">
+            <select name="country" required>
+            	<option value=""> </option>
+                 <option value="US"> US</option>
+                  <option value="UK"> UK</option>
+                  <option value="AUS"> AUS</option>
+                 </select>
+			
+		</fieldset>
+		<br>
+		<fieldset>
+			<legend style="color:black;font-size:20px;"align="center"> Booking Details:</legend>
+			<label for="date"> Booking Date:</label><input id="date" type="date" name="date" min="2013-12-02">
+			<label for="number of guests">Number Of Guests: </label><input id="number of guests"type="number" name="number of guests" min="1" max="6">
+			<p> Do you require meals?</p>
+			<label for="yes meals">YES:</label><input id="yes meals" type="radio" name="meals" value="yes meals">
+			<label for="no meals">NO:</label><input id="no meals" type="radio" name="meals" value="no meals">
+              <br>
+             <label for="balcony">Do you require a balcony?</label> <input id="balcony" type="checkbox" name="balcony" value="yes" checked>
+              <br>
+              <button class="btn btn-default" type="submit">SUBMIT</button>
+
+
+			
+		</fieldset>
+	</form>
+
+</body>
+</html>
